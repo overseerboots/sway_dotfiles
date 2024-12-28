@@ -1,0 +1,63 @@
+/**
+ * ROFI Color theme
+ * User: Habib
+ * Copyright: JuJu Ashbe !!
+*/
+
+* {
+    dark:#1e2326;
+    dark-alt:#2e383c;
+    red:#e67e80;
+    red-alt:#3c3743;
+    orange:#e69875;
+    yellow: #dbbc7f;
+    blue:#7fbbb3;
+    green:#a7c080;
+    aqua: #83c092;
+    cream:#d3c6aa;
+    grey:#9da9a0;
+    dark-grey:#7a8478;
+    transparent:#00000000;
+    highlight:underline bold #ca3433;
+
+    padding:0;
+    margin:0;
+    border:0;
+    border-radius:0;
+    spacing:0;
+
+    text-color: @cream;
+
+    font:"JetBrainsMono Nerd Font Bold Italic 20";
+}
+
+window {
+    width: 35%;
+    location: center;
+    border-radius:0px;
+    background-color:@dark;
+    children: [listview];
+}
+
+listview {
+    border:0px;
+    padding:0px;
+    margin:0px;
+    columns:1;
+    lines:4;
+    background-color:@dark;
+    cycle:false;
+    scrollbar:false;
+}
+
+
+element-text {
+    text-color:                  @cream;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    background-color:            @dark;
+}
+
+element-text selected {
+    background-color: @dark-alt;
+}
